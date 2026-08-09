@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sr" data-lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrika Coffee | Cyberpunk Rave 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Cursor glow trail (Desktop wow-moment) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">FABRIKA</span> COFFEE
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" data-i18n="nav_home">Home</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#menu" data-i18n="nav_menu">Menu</a>
+                <a href="#beans" data-i18n="nav_beans">Beans & Gear</a>
+                <a href="#locations" data-i18n="nav_locations">Locations</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-set-lang="sr">SR</button>
+                    <button class="lang-btn" data-set-lang="en">EN</button>
+                    <button class="lang-btn" data-set-lang="ru">RU</button>
+                </div>
+                <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hud-eyebrow">
+                        <span class="hud-dot"></span>
+                        <span data-i18n="hero_eyebrow">Kultna lokacija</span>
+                    </div>
+                    <h1 class="hero-title glitch-target" data-text="FABRIKA / NIGHT & DAY FUEL">
+                        <span>FABRIKA</span> / NIGHT & DAY FUEL
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
+                        Spešelti kafa, rejv estetika, kvalitetna hrana i energija velikog grada.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary" data-i18n="hero_cta1">Pogledaj meni</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="hero_cta2">Naruči preko Glovo</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-frame hud-border">
+                        <img src="assets/img_01.jpg" alt="Fabrika Coffee Bar" loading="eager">
+                        <div class="hud-overlay-badge">PODGORICA // HERCEG NOVI</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Industrial HUD Box -->
+            <div class="hud-footer-panel">
+                <div class="hud-item">
+                    <span class="hud-label">STATUS</span>
+                    <span class="hud-val neon-pulse">ONLINE 24/7 FUEL</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">HOTLINE</span>
+                    <a href="tel:+38269990922" class="hud-link">+382 69 990 922</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <div class="about-number-box hud-border">
+                    <span class="giant-number">05</span>
+                    <span class="number-label" data-i18n="about_label">KULTNIH LOKACIJA</span>
+                </div>
+                <div class="about-manifesto">
+                    <h2 class="section-title" data-i18n="about_title">MANIFESTO</h2>
+                    <p class="manifesto-text" data-i18n="about_text">
+                        Spajamo beskompromisni specialty espresso, mračnu klupsku estetiku i brutalnu energiju asфальта. Svaka šoljica je gorivo za urbane nomade i noćne lutalice. Nema kompromisa. Samo čisti kofein i bas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Marquee slider gallery -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <div class="marquee-item hud-border">
+                        <img src="assets/img_02.jpg" alt="Iced Coffee and Croissant">
+                    </div>
+                    <div class="marquee-item hud-border">
+                        <img src="assets/img_03.jpg" alt="Nitro Cold Brew">
+                    </div>
+                    <div class="marquee-item hud-border">
+                        <img src="assets/img_04.jpg" alt="Beans and Hario">
+                    </div>
+                    <div class="marquee-item hud-border">
+                        <img src="assets/img_01.jpg" alt="Bar atmosphere">
+                    </div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="marquee-item hud-border" aria-hidden="true">
+                        <img src="assets/img_02.jpg" alt="">
+                    </div>
+                    <div class="marquee-item hud-border" aria-hidden="true">
+                        <img src="assets/img_03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="menu_main_title">01. INTERACTIVE HUD MENU</h2>
+                <p class="section-desc" data-i18n="menu_main_desc">Izaberi svoju frekvenciju.</p>
+            </div>
+
+            <!-- HUD Category Tabs -->
+            <div class="menu-tabs" id="menuTabs">
+                <button class="tab-btn active" data-category="кофе" data-i18n="cat_coffee">01. COFFEE & DRINKS</button>
+                <button class="tab-btn" data-category="кофе со вкусами" data-i18n="cat_flavored">02. FLAVORED & ICE</button>
+                <button class="tab-btn" data-category="кофе фильтр" data-i18n="cat_filter">03. FILTER & NITRO</button>
+                <button class="tab-btn" data-category="чай" data-i18n="cat_tea">04. TEA</button>
+                <button class="tab-btn" data-category="безалкогольные напитки" data-i18n="cat_soft">05. SOFT & JUICE</button>
+                <button class="tab-btn" data-category="алкоголь" data-i18n="cat_alc">06. ALCOHOL</button>
+                <button class="tab-btn" data-category="вино" data-i18n="cat_wine">07. WINE</button>
+                <button class="tab-btn" data-category="добавки" data-i18n="cat_adds">08. MILK & ADD-ONS</button>
+                <button class="tab-btn" data-category="еда" data-i18n="cat_food">09. FOOD & BAKERY</button>
+                <button class="tab-btn" data-category="kafe i opreme" data-i18n="cat_gear">10. BEANS & HARIO GEAR</button>
+            </div>
+
+            <div class="menu-content-grid">
+                <div class="menu-items-list" id="menuItemsContainer">
+                    <!-- Dynamic items rendered via JS -->
+                </div>
+                <div class="menu-side-visual hud-border">
+                    <img src="assets/img_03.jpg" alt="Nitro Cold Brew feature">
+                    <div class="menu-side-caption" data-i18n="menu_side_caption">
+                        DARK TECHNO BREW // 100% ARABICA
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beans & Gear Section -->
+        <section id="beans" class="beans-section">
+            <div class="beans-grid">
+                <div class="beans-visual hud-border">
+                    <img src="assets/img_04.jpg" alt="Specialty Beans and Hario Gear">
+                </div>
+                <div class="beans-info">
+                    <h2 class="section-title" id="beansHeading">Spešelti zrno i oprema</h2>
+                    <p class="section-desc" id="beansBody">Vrhunska kafa u zrnu za kućnu pripremu i profesionalna Hario oprema.</p>
+                    
+                    <div class="product-mini-grid">
+                        <div class="mini-card hud-border">
+                            <h3>Kenya Muthigi</h3>
+                            <span class="price-tag">10.00€</span>
+                            <p>Regija: Kirinyaga, Sorte: SL-28, Ruiru 11, Note: citrus, zelena jabuka, karamela, bijela čokolada</p>
+                        </div>
+                        <div class="mini-card hud-border">
+                            <h3>Columbia Narino</h3>
+                            <span class="price-tag">12.80€</span>
+                            <p>Regija: Narino, Sorte: Caturra i Catuai, Note: Cimet, kardamom, suvo voće, brusnica</p>
+                        </div>
+                        <div class="mini-card hud-border">
+                            <h3>V60 Ceramic Dripper</h3>
+                            <span class="price-tag">27.50€</span>
+                            <p>HARIO PROIZVODI - Professional home brewing gear.</p>
+                        </div>
+                        <div class="mini-card hud-border">
+                            <h3>HARIO Drip Scale</h3>
+                            <span class="price-tag">68.00€</span>
+                            <p>HARIO PROIZVODI - Precision digital scale for filter coffee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="locations-section">
+            <div class="section-header">
+                <h2 class="section-title" id="locHeading" data-i18n="loc_heading">Lokacije</h2>
+                <p class="section-desc" id="locBody" data-i18n="loc_body">Posetite nas na jednoj od 5 lokacija ili naručite preko Glovo-a.</p>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card hud-border">
+                    <div class="loc-badge">PODGORICA 01</div>
+                    <h3>Bracana Bracanovića</h3>
+                    <p>bb Bracana Bracanovića, Podgorica 81000, Черногория</p>
+                    <div class="loc-actions">
+                        <a href="https://maps.google.com/?q=Bracana+Bracanovića+Podgorica" target="_blank" rel="noopener" class="btn btn-sm btn-primary" data-i18n="btn_directions">Get Directions</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">Glovo</a>
+                    </div>
+                </div>
+
+                <div class="location-card hud-border">
+                    <div class="loc-badge">PODGORICA 02</div>
+                    <h3>Moskovska</h3>
+                    <p>27 Moskovska, Podgorica 81000, Черногория</p>
+                    <div class="loc-actions">
+                        <a href="https://maps.google.com/?q=27+Moskovska+Podgorica" target="_blank" rel="noopener" class="btn btn-sm btn-primary" data-i18n="btn_directions">Get Directions</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">Glovo</a>
+                    </div>
+                </div>
+
+                <div class="location-card hud-border">
+                    <div class="loc-badge">PODGORICA 03</div>
+                    <h3>Novaka Miloševa</h3>
+                    <p>23 Novaka Miloševa, Podgorica 81000, Черногория</p>
+                    <div class="loc-actions">
+                        <a href="https://maps.google.com/?q=23+Novaka+Miloševa+Podgorica" target="_blank" rel="noopener" class="btn btn-sm btn-primary" data-i18n="btn_directions">Get Directions</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">Glovo</a>
+                    </div>
+                </div>
+
+                <div class="location-card hud-border">
+                    <div class="loc-badge">PODGORICA 04</div>
+                    <h3>Ivana Crnojevića</h3>
+                    <p>C7V7+8H9, Bulevar Ivana Crnojevića, Podgorica, Черногория</p>
+                    <div class="loc-actions">
+                        <a href="https://maps.google.com/?q=Bulevar+Ivana+Crnojevića+Podgorica" target="_blank" rel="noopener" class="btn btn-sm btn-primary" data-i18n="btn_directions">Get Directions</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">Glovo</a>
+                    </div>
+                </div>
+
+                <div class="location-card hud-border highlight-card">
+                    <div class="loc-badge">HERCEG NOVI 01</div>
+                    <h3>Njegoševa</h3>
+                    <p>13 Njegoševa, Herceg - Novi 85340, Черногория</p>
+                    <div class="loc-actions">
+                        <a href="https://maps.google.com/?q=13+Njegoševa+Herceg+Novi" target="_blank" rel="noopener" class="btn btn-sm btn-primary" data-i18n="btn_directions">Get Directions</a>
+                        <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">Glovo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-giant-text">
+            <span>FABRIKA COFFEE</span>
+        </div>
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="hud-label" data-i18n="footer_contact">DIRECT LINE</span>
+                <a href="tel:+38269990922" class="footer-phone">+38269990922</a>
+            </div>
+            <div class="footer-col">
+                <span class="hud-label" data-i18n="footer_social">SOCIAL FREQUENCY</span>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fabrikacoffeecg?igsh=MWw1bjM3cmU0ZW1ldA==" target="_blank" rel="noopener" class="social-link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="copyright" data-i18n="footer_copy">© Fabrika Coffee. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
